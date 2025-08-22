@@ -1,0 +1,36 @@
+# CODEOWNERS file for dashboard-database-9
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-billing @Armor-test/squad-research @Armor-test/dept-data
+
+# Directory ownership
+/db/ @Armor-test/grp-api @Armor-test/squad-frontend
+/static/ @Armor-test/squad-payments @Armor-test/dept-billing
+/config/ @Armor-test/team-core @Armor-test/team-notifications
+/api/ @Armor-test/dept-release @Armor-test/dept-data @Armor-test/dept-reporting
+/scripts/ @Armor-test/unit-design @Armor-test/squad-reporting
+/migrations/ @Armor-test/team-governance @Armor-test/dept-reporting @Armor-test/squad-database
+/styles/ @Armor-test/dept-ui @Armor-test/squad-performance @Armor-test/squad-qa
+/models/ @Armor-test/unit-design @Armor-test/team-research
+/shared/ @Armor-test/grp-payments @Armor-test/team-core @Armor-test/dept-notifications
+/controllers/ @Armor-test/squad-cache @Armor-test/dept-billing
+/pages/ @Armor-test/grp-ui @Armor-test/unit-design @Armor-test/dept-automation
+/app/ @Armor-test/unit-design @Armor-test/team-governance
+/tests/ @Armor-test/squad-frontend @Armor-test/unit-devops @Armor-test/squad-api
+/core/ @Armor-test/squad-research @Armor-test/dept-logging @Armor-test/dept-reporting
+
+# File type ownership
+*.yaml @Armor-test/team-security @Armor-test/team-governance @Armor-test/grp-storage
+*.sql @Armor-test/squad-cache @Armor-test/team-reporting @Armor-test/dept-api
+*.cs @Armor-test/squad-research @Armor-test/dept-test
+*.java @Armor-test/dept-test @Armor-test/team-logging @Armor-test/unit-devops
+*.sh @Armor-test/unit-design @Armor-test/dept-ui
+*.rs @Armor-test/squad-mobile @Armor-test/dept-notifications @Armor-test/grp-reporting
+*.h @Armor-test/grp-integration @Armor-test/squad-ux @Armor-test/squad-performance
+*.js @Armor-test/dept-logging @Armor-test/grp-ui
+*.tsx @Armor-test/squad-cloud @Armor-test/squad-payments
+*.properties @Armor-test/dept-release @Armor-test/dept-security @Armor-test/dept-data
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
